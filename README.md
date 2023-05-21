@@ -14,7 +14,7 @@ This repository provides a template for building applications using the Clean Ar
 ## Download the Project
 
 ```bash
-git clone https://github.com/javiertelioz/clean-arquitecure-python.git
+git clone https://github.com/javiertelioz/clean-architecture-python.git
 ```
 
 ## Setup
@@ -22,7 +22,7 @@ git clone https://github.com/javiertelioz/clean-arquitecure-python.git
 Navigate to the project directory:
 
 ```bash
-cd clean-arquitecure-python
+cd clean-architecture-python
 ```
 
 ## Run the Application
