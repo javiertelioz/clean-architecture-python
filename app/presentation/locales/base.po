@@ -1,0 +1,486 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-05-20 20:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: /usr/lib/python3.9/argparse.py:308
+#: /usr/local/lib/python3.11/argparse.py:299
+msgid "usage: "
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:866
+#: /usr/local/lib/python3.11/argparse.py:875
+msgid ".__call__() not defined"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1209
+#: /usr/local/lib/python3.11/argparse.py:1224
+msgid "unknown parser %(parser_name)r (choices: %(choices)s)"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1269
+#: /usr/local/lib/python3.11/argparse.py:1284
+msgid "argument \"-\" with mode %r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1278
+#: /usr/local/lib/python3.11/argparse.py:1293
+msgid "can't open '%(filename)s': %(error)s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1487
+#: /usr/local/lib/python3.11/argparse.py:1502
+msgid "cannot merge actions - two groups are named %r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1525
+#: /usr/local/lib/python3.11/argparse.py:1540
+msgid "'required' is an invalid argument for positionals"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1547
+#: /usr/local/lib/python3.11/argparse.py:1562
+msgid "invalid option string %(option)r: must start with a character %(prefix_chars)r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1565
+#: /usr/local/lib/python3.11/argparse.py:1580
+msgid "dest= is required for options like %r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1582
+#: /usr/local/lib/python3.11/argparse.py:1597
+msgid "invalid conflict_resolution value: %r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1666
+#: /usr/local/lib/python3.11/argparse.py:1689
+msgid "mutually exclusive arguments must be optional"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1733
+#: /usr/local/lib/python3.11/argparse.py:1765
+msgid "positional arguments"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1734
+msgid "optional arguments"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1749 /usr/lib/python3.9/optparse.py:1238
+#: /usr/local/lib/python3.11/argparse.py:1781
+#: /usr/local/lib/python3.11/optparse.py:1238
+msgid "show this help message and exit"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1780
+#: /usr/local/lib/python3.11/argparse.py:1812
+msgid "cannot have multiple subparser arguments"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1832 /usr/lib/python3.9/argparse.py:2343
+#: /usr/local/lib/python3.11/argparse.py:1864
+#: /usr/local/lib/python3.11/argparse.py:2377
+msgid "unrecognized arguments: %s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1933
+#: /usr/local/lib/python3.11/argparse.py:1964
+msgid "not allowed with argument %s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:1979 /usr/lib/python3.9/argparse.py:1993
+#: /usr/local/lib/python3.11/argparse.py:2014
+#: /usr/local/lib/python3.11/argparse.py:2028
+msgid "ignored explicit argument %r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2100
+#: /usr/local/lib/python3.11/argparse.py:2135
+msgid "the following arguments are required: %s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2115
+#: /usr/local/lib/python3.11/argparse.py:2150
+msgid "one of the arguments %s is required"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2158
+#: /usr/local/lib/python3.11/argparse.py:2192
+msgid "expected one argument"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2159
+#: /usr/local/lib/python3.11/argparse.py:2193
+msgid "expected at most one argument"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2160
+#: /usr/local/lib/python3.11/argparse.py:2194
+msgid "expected at least one argument"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2222
+#: /usr/local/lib/python3.11/argparse.py:2256
+msgid "ambiguous option: %(option)s could match %(matches)s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2286
+#: /usr/local/lib/python3.11/argparse.py:2320
+msgid "unexpected option string: %s"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2483
+#: /usr/local/lib/python3.11/argparse.py:2517
+msgid "%r is not callable"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2500
+#: /usr/local/lib/python3.11/argparse.py:2534
+msgid "invalid %(type)s value: %(value)r"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2511
+#: /usr/local/lib/python3.11/argparse.py:2545
+msgid "invalid choice: %(value)r (choose from %(choices)s)"
+msgstr ""
+
+#: /usr/lib/python3.9/argparse.py:2587
+#: /usr/local/lib/python3.11/argparse.py:2621
+msgid ""
+"%(prog)s: error: %(message)s\n"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:161 /usr/local/lib/python3.11/getopt.py:161
+msgid "option --%s requires argument"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:164 /usr/local/lib/python3.11/getopt.py:164
+msgid "option --%s must not have an argument"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:174 /usr/local/lib/python3.11/getopt.py:174
+msgid "option --%s not recognized"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:184 /usr/local/lib/python3.11/getopt.py:184
+msgid "option --%s not a unique prefix"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:198 /usr/local/lib/python3.11/getopt.py:198
+msgid "option -%s requires argument"
+msgstr ""
+
+#: /usr/lib/python3.9/getopt.py:211 /usr/local/lib/python3.11/getopt.py:211
+msgid "option -%s not recognized"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:146
+#: /usr/local/lib/python3.11/optparse.py:146
+msgid "no such option: %s"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:157
+#: /usr/local/lib/python3.11/optparse.py:157
+msgid "ambiguous option: %s (%s?)"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:381
+#: /usr/local/lib/python3.11/optparse.py:381
+msgid ""
+"Usage: %s\n"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:400
+#: /usr/local/lib/python3.11/optparse.py:400
+msgid "Usage"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:422 /usr/lib/python3.9/optparse.py:423
+#: /usr/local/lib/python3.11/optparse.py:422
+#: /usr/local/lib/python3.11/optparse.py:423
+msgid "integer"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:424
+#: /usr/local/lib/python3.11/optparse.py:424
+msgid "floating-point"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:425
+#: /usr/local/lib/python3.11/optparse.py:425
+msgid "complex"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:433
+#: /usr/local/lib/python3.11/optparse.py:433
+msgid "option %s: invalid %s value: %r"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:441
+#: /usr/local/lib/python3.11/optparse.py:441
+msgid "option %s: invalid choice: %r (choose from %s)"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:1243
+#: /usr/local/lib/python3.11/optparse.py:1243
+msgid "show program's version number and exit"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:1266
+#: /usr/local/lib/python3.11/optparse.py:1266
+msgid "%prog [options]"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:1496
+#: /usr/local/lib/python3.11/optparse.py:1496
+msgid "%s option does not take a value"
+msgstr ""
+
+#: /usr/lib/python3.9/optparse.py:1612
+#: /usr/local/lib/python3.11/optparse.py:1612
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1357
+msgid "Options"
+msgstr ""
+
+#: /usr/local/lib/python3.11/argparse.py:769
+msgid "argument %(argument_name)s: %(message)s"
+msgstr ""
+
+#: /usr/local/lib/python3.11/argparse.py:1185
+msgid "conflicting subparser: %s"
+msgstr ""
+
+#: /usr/local/lib/python3.11/argparse.py:1189
+msgid "conflicting subparser alias: %s"
+msgstr ""
+
+#: /usr/local/lib/python3.11/argparse.py:1766
+msgid "options"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/_termui_impl.py:496
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/_termui_impl.py:500
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1097
+msgid "Aborted!"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1282
+#: /usr/local/lib/python3.11/site-packages/click/decorators.py:495
+msgid "Show this message and exit."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1313
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1339
+msgid "(Deprecated) {text}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1398
+msgid "DeprecationWarning: The command {name!r} is deprecated."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1605
+msgid "Commands"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1637
+msgid "Missing command."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:1715
+msgid "No such command {name!r}."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:2271
+msgid "Value must be an iterable."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:2734
+msgid "env var: {var}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:2764
+msgid "(dynamic)"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:2777
+msgid "default: {default}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/core.py:2790
+msgid "required"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/decorators.py:400
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/decorators.py:464
+msgid "Show the version and exit."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:43
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:79
+msgid "Error: {message}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:71
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:120
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:122
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:178
+msgid "Missing argument"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:180
+msgid "Missing option"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:182
+msgid "Missing parameter"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:184
+msgid "Missing {param_type}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:191
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:211
+msgid "No such option: {name}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:261
+msgid "unknown error"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/exceptions.py:268
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/parser.py:231
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/parser.py:413
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/shell_completion.py:315
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/shell_completion.py:322
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:160
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:176
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:178
+msgid "Error: {e.message}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:189
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:245
+msgid "Error: invalid input"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/termui.py:776
+msgid "Press any key to continue..."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:265
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:409
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:465
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:606
+msgid "{value!r} is not a valid boolean."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:630
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:811
+msgid "file"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:813
+msgid "directory"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:815
+msgid "path"
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:861
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:870
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:878
+msgid "{name} '{filename}' is a directory."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:887
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:896
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: /usr/local/lib/python3.11/site-packages/click/types.py:905
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+

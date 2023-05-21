@@ -1,0 +1,37 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    env_file:
+      - .env
+    #command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    command:
+      [
+        "sh",
+        "-c",
+        "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload",
+      ]
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+      - 5678:5678
+    depends_on:
+      - postgres
+
+  postgres:
+    image: "postgres:13-alpine"
+    environment:
+      TZ: "America/Mexico_City"
+      PGTZ: "America/Mexico_City"
+      POSTGRES_PASSWORD: password
+      PGDATA: /var/lib/postgresql/data/user
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    ports:
+      - 5432:5432
+
+volumes:
+  postgresql_data:
