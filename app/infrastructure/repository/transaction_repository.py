@@ -1,12 +1,9 @@
-from sqlalchemy.orm import Session
-
-from app.domain.models.transaction_entity import TransactionEntity
-
-from app.infrastructure.configs.database import (
-    get_db_connection,
+from app.domain.contracts.repository.transaction_repository import (
+    TransactionRepository as Repository,
 )
-
-from app.domain.contracts.repository.transaction_repository import TransactionRepository as Repository
+from app.domain.models.transaction_entity import TransactionEntity
+from app.infrastructure.configs.database import get_db_connection
+from sqlalchemy.orm import Session
 
 
 class TransactionRepository(Repository):

@@ -1,11 +1,11 @@
-from fastapi import Depends
-
+from app.application.base_use_case import UseCase
+from app.domain.exceptions.user_not_found_exception import UserNotFoundException
 from app.domain.models.user_entity import UserEntity
 from app.domain.services.user_service import UserService
-from app.domain.exceptions.user_not_found_exception import UserNotFoundException
+from fastapi import Depends
 
 
-class UpdateUserUseCase:
+class UpdateUserUseCase(UseCase[None]):
     def __init__(self, user_service: UserService = Depends()):
         self.user_service = user_service
 

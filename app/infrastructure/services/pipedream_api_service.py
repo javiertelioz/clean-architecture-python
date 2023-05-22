@@ -1,16 +1,15 @@
 import os
-import requests
 
+import requests
 from app.domain.contracts.transactional.transaction_client import TransactionClient
 
 
 class PipedreamApi(TransactionClient):
     def __init__(self):
-        self.api_url = os.getenv('PIPEDREAM_API_ENDPOINT')
+        self.api_url = os.getenv("PIPEDREAM_API_ENDPOINT")
 
         if not self.api_url:
-            raise ValueError(
-                "Missing PIPEDREAM_API_ENDPOINT environment variable")
+            raise ValueError("Missing PIPEDREAM_API_ENDPOINT environment variable")
 
     def get_transactions(self, date):
         url = self.api_url

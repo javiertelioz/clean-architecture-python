@@ -6,6 +6,10 @@
     "sessionmaker",
     "sqlalchemy"
   ],
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
@@ -17,10 +21,6 @@
   "python.formatting.blackArgs": [
     "--line-length",
     "120"
-  ],
-  "python.isort.args": [
-    "--profile",
-    "black"
   ],
   "editor.formatOnSave": true,
   "editor.tabSize": 4,

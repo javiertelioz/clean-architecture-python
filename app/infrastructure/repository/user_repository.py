@@ -1,14 +1,10 @@
-from fastapi import Depends
 from typing import List
 
-from sqlalchemy.orm import Session
-
-from app.infrastructure.configs.database import (
-    get_db_connection,
-)
-
-from app.domain.models.user_entity import UserEntity
 from app.domain.contracts.repository.user_repository import UserRepository as Repository
+from app.domain.models.user_entity import UserEntity
+from app.infrastructure.configs.database import get_db_connection
+from fastapi import Depends
+from sqlalchemy.orm import Session
 
 
 class UserRepository(Repository):
