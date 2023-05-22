@@ -4,7 +4,7 @@ This repository provides a template for building applications using the Clean Ar
 
 [![Tests](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml/badge.svg)](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml)
 
-[![Coverage](https://github.com/javiertelioz/clean-architecture-python/raw/main/coverage.svg)](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml)
+[![Coverage](https://github.com/javiertelioz/clean-architecture-python/raw/main/docs/coverage.svg)](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml)
 
 ## Technology Stack
 
