@@ -1,0 +1,39 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  script:
+    - echo "Building the Docker image..."
+    - docker build -t $CI_REGISTRY_IMAGE:latest .
+    - echo "Pushing the Docker image to ECR..."
+    - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ECR_REGISTRY
+    - docker push $CI_REGISTRY_IMAGE:latest
+
+test:
+  stage: test
+  image: python:3.9
+  services:
+    - name: postgres:latest
+      alias: postgres
+  variables:
+    POSTGRES_HOST: postgres
+    POSTGRES_PORT: 5432
+    POSTGRES_DB: myapp_test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: secret
+  script:
+    - echo "Running tests..."
+    - docker run --rm --network="host" $CI_REGISTRY_IMAGE:latest pytest
+
+deploy:
+  stage: deploy
+  image: amazon/aws-cli:latest
+  script:
+    - echo "Deploying the Docker image to ECS..."
+    - aws ecs update-service --cluster $AWS_ECS_CLUSTER --service $AWS_ECS_SERVICE --force-new-deployment
