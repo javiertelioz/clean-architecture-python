@@ -6,6 +6,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env:
+      API_VERSION: 1.0
+      APP_NAME: clean-architecture-python
+      DATABASE_DIALECT: postgresql
+      DATABASE_HOSTNAME: localhost
+      DATABASE_NAME: test_db
+      DATABASE_PASSWORD: password
+      DATABASE_PORT: 5432
+      DATABASE_USERNAME: username
+      DEBUG_MODE: True
+
     steps:
       - uses: actions/checkout@v2
 
@@ -17,5 +28,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run tests
-        run: pytest
+      - name: Set up environment variables
+        run: |
+          echo "API_VERSION=${API_VERSION}" >> $GITHUB_ENV
+          echo "APP_NAME=${APP_NAME}" >> $GITHUB_ENV
+          echo "DATABASE_DIALECT=${DATABASE_DIALECT}" >> $GITHUB_ENV
+          echo "DATABASE_HOSTNAME=${DATABASE_HOSTNAME}" >> $GITHUB_ENV
+          echo "DATABASE_NAME=${DATABASE_NAME}" >> $GITHUB_ENV
+          echo "DATABASE_PASSWORD=${DATABASE_PASSWORD}" >> $GITHUB_ENV
+          echo "DATABASE_PORT=${DATABASE_PORT}" >> $GITHUB_ENV
+          echo "DATABASE_USERNAME=${DATABASE_USERNAME}" >> $GITHUB_ENV
+          echo "DEBUG_MODE=${DEBUG_MODE}" >> $GITHUB_ENV
+
+      - name: Run tests with code coverage
+        run: |
+          coverage run -m pytest
+          coverage report -m
+
+      - name: Upload code coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: code-coverage
+          path: htmlcov
