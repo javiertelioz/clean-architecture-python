@@ -2,6 +2,10 @@
 
 This repository provides a template for building applications using the Clean Architecture principles with Python.
 
+[![Tests](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml/badge.svg)](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml)
+
+[![Coverage](https://github.com/javiertelioz/clean-architecture-python/raw/main/coverage.svg)](https://github.com/javiertelioz/clean-architecture-python/actions/workflows/tests.yml)
+
 ## Technology Stack
 
 - Python

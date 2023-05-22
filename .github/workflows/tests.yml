@@ -47,9 +47,17 @@ jobs:
           coverage run -m pytest
           coverage report -m
           coverage html
+      - name: Generate coverage badge
+        run: coverage-badge -o coverage.svg
 
       - name: Upload code coverage
         uses: actions/upload-artifact@v2
         with:
           name: code-coverage
           path: htmlcov
+
+      - name: Upload coverage badge
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-badge
+          path: coverage.svg
