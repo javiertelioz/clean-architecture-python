@@ -1,7 +1,7 @@
 from unittest.mock import Mock
 
-from app.infrastructure.repository.user_repository import UserRepository
 from app.domain.models.user_entity import UserEntity
+from app.infrastructure.repository.user_repository import UserRepository
 
 
 def test_create_user():

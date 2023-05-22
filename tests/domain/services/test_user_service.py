@@ -1,12 +1,14 @@
 import uuid
-import pytest
 
-from app.domain.exceptions.user_already_exists_exception import UserAlreadyExistsException
+import pytest
+from app.domain.exceptions.user_already_exists_exception import (
+    UserAlreadyExistsException,
+)
 from app.domain.exceptions.user_not_found_exception import UserNotFoundException
 from app.domain.models.user_entity import UserEntity
-from app.infrastructure.schemas.pydantic.user_schema import UserSchema
-from app.infrastructure.repository.user_repository import UserRepository
 from app.domain.services.user_service import UserService
+from app.infrastructure.repository.user_repository import UserRepository
+from app.infrastructure.schemas.pydantic.user_schema import UserSchema
 
 
 class MockUserRepository(UserRepository):
@@ -21,7 +23,8 @@ class MockUserRepository(UserRepository):
             surname="Smith",
             email="johndoe@example.com",
             phone="+123456789",
-            password="password")
+            password="password",
+        )
 
     def find_by_id(self, id):
         return UserEntity(
@@ -31,7 +34,8 @@ class MockUserRepository(UserRepository):
             surname="Smith",
             email="johndoe@example.com",
             phone="+123456789",
-            password="password")
+            password="password",
+        )
 
     def update(self, instance):
         return UserEntity(
@@ -41,7 +45,8 @@ class MockUserRepository(UserRepository):
             surname="Smith",
             email="johndoe@example.com",
             phone="+123456789",
-            password="password")
+            password="password",
+        )
 
     def delete(self, instance):
         pass
