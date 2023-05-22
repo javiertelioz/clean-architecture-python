@@ -16,6 +16,7 @@ jobs:
       DATABASE_PORT: 5432
       DATABASE_USERNAME: username
       DEBUG_MODE: True
+      PIPEDREAM_API_ENDPOINT: "https://eoylo519qvrfijk.m.pipedream.net"
 
     steps:
       - uses: actions/checkout@v2
@@ -39,6 +40,7 @@ jobs:
           echo "DATABASE_PORT=${DATABASE_PORT}" >> $GITHUB_ENV
           echo "DATABASE_USERNAME=${DATABASE_USERNAME}" >> $GITHUB_ENV
           echo "DEBUG_MODE=${DEBUG_MODE}" >> $GITHUB_ENV
+          echo "PIPEDREAM_API_ENDPOINT=${PIPEDREAM_API_ENDPOINT}" >> $GITHUB_ENV
 
       - name: Run tests with code coverage
         run: |
