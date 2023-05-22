@@ -7,7 +7,6 @@ K = TypeVar("K")
 
 
 class RepositoryMeta(Generic[M, K]):
-
     @abstractmethod
     def create(self, instance: M) -> M:
         """

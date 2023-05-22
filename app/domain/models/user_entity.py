@@ -13,8 +13,7 @@ class UserEntity(EntityMeta):
 
     __tablename__ = "users"
 
-    id = Column(UUID(as_uuid=True), primary_key=True,
-                default=uuid.uuid4, index=True)
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4, index=True)
     name = Column(String, nullable=False)
     lastname = Column(String, nullable=False)
     surname = Column(String, nullable=False)

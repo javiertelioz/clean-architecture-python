@@ -38,7 +38,7 @@ class UserService:
                 surname=user_body.surname,
                 email=user_body.email,
                 phone=user_body.phone,
-                password=user_body.password
+                password=user_body.password,
             )
         )
 

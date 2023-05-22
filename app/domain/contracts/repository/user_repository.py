@@ -4,7 +4,6 @@ from app.domain.models.user_entity import UserEntity
 
 
 class UserRepository(RepositoryMeta[UserEntity, str]):
-
     def __init__(self):
         pass
 

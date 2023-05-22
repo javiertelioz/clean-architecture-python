@@ -6,13 +6,22 @@
     "sessionmaker",
     "sqlalchemy"
   ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
   },
+  "python.formatting.provider": "black",
   "python.formatting.blackArgs": [
     "--line-length",
     "120"
   ],
-  "python.formatting.provider": "none",
+  "python.isort.args": [
+    "--profile",
+    "black"
+  ],
+  "editor.formatOnSave": true,
+  "editor.tabSize": 4,
 }

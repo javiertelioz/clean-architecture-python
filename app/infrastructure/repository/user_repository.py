@@ -1,7 +1,7 @@
 from fastapi import Depends
-from typing import List, Optional
+from typing import List
 
-from sqlalchemy.orm import Session, lazyload
+from sqlalchemy.orm import Session
 
 from app.infrastructure.configs.database import (
     get_db_connection,
@@ -17,9 +17,7 @@ class UserRepository(Repository):
     UserRepository provides CRUD operations for User objects using SQLAlchemy.
     """
 
-    def __init__(
-        self, db: Session = Depends(get_db_connection)
-    ) -> None:
+    def __init__(self, db: Session = Depends(get_db_connection)) -> None:
         self.db = db
 
     def create(self, user: UserEntity) -> UserEntity:

@@ -11,7 +11,7 @@ class TransactionEntity(EntityMeta):
     __tablename__ = "transactions"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column("user_id", ForeignKey("users.id")),
+    user_id = Column("user_id", ForeignKey("users.id"))
     transaction_type = Column(String, nullable=False)
     amount = Column(Integer, nullable=False)
     description = Column(String, nullable=False)

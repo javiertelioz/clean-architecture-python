@@ -7,10 +7,9 @@ from app.domain.models.user_entity import UserEntity
 from app.domain.services.user_service import UserService
 from app.domain.exceptions.user_not_found_exception import UserNotFoundException
 from app.domain.exceptions.user_already_exists_exception import UserAlreadyExistsException
+from app.application.use_cases.user import CreateUserUseCase, GetUserByIdUseCase, UpdateUserUseCase, DeleteUserUseCase
 
-router = APIRouter(
-    prefix="/api/v1/users", tags=["User"]
-)
+router = APIRouter(prefix="/api/v1/users", tags=["User"])
 
 
 @router.post(
@@ -20,10 +19,10 @@ router = APIRouter(
 )
 async def create(
     user: UserPostRequestSchema,
-    userService: UserService = Depends(),
+    use_case: CreateUserUseCase = Depends(),
 ) -> UserEntity:
     try:
-        return userService.create(user).normalize()
+        return use_case.execute(user)
     except UserAlreadyExistsException as e:
         raise get_http_exception(e)
 
@@ -33,11 +32,14 @@ async def create(
     response_model=UserSchema,
     status_code=status.HTTP_200_OK,
 )
-async def get(
+async def get_by_id(
     id: str,
-    userService: UserService = Depends(),
+    use_case: GetUserByIdUseCase = Depends(),
 ) -> UserEntity:
-    return userService.get(id).normalize()
+    try:
+        return use_case.execute(id)
+    except UserNotFoundException as e:
+        raise get_http_exception(e)
 
 
 @router.put(
@@ -48,11 +50,10 @@ async def get(
 async def update(
     id: str,
     user: UserPostRequestSchema,
-    userService: UserService = Depends(),
+    use_case: UpdateUserUseCase = Depends(),
 ) -> UserEntity:
-
     try:
-        return userService.update(id, user).normalize()
+        return use_case.execute(id, user)
     except UserNotFoundException as e:
         raise get_http_exception(e)
     except Exception as err:
@@ -65,10 +66,10 @@ async def update(
 )
 async def delete(
     id: str,
-    userService: UserService = Depends(),
+    use_case: DeleteUserUseCase = Depends(),
 ) -> None:
     try:
-        userService.delete(id)
+        use_case.execute(id)
     except UserNotFoundException as e:
         raise get_http_exception(e)
     except Exception as err:

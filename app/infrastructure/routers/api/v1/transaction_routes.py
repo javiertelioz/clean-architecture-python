@@ -1,8 +1,6 @@
 from fastapi import APIRouter
 
-router = APIRouter(
-    prefix="/api/v1/transactions", tags=["Transaction"]
-)
+router = APIRouter(prefix="/api/v1/transactions", tags=["Transaction"])
 
 
 @router.post("/")
