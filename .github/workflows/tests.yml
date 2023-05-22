@@ -46,6 +46,7 @@ jobs:
         run: |
           coverage run -m pytest
           coverage report -m
+          coverage html
 
       - name: Upload code coverage
         uses: actions/upload-artifact@v2
