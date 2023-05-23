@@ -37,7 +37,11 @@ Start the application using Docker Compose:
 docker-compose up -d
 ```
 
-Once the application is running, you can access the API documentation at http://localhost:8000/docs.
+Once the application is running, you can access the API documentation at http://localhost:8000.
+
+- [Open Api](http://localhost:8000/docs).
+- [Redoc](http://localhost:8000/redoc).
+- [GraphQL](http://localhost:8000/graphql).
 
 ## Linting
 

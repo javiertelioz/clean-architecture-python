@@ -13,6 +13,7 @@ def get_env_filename():
 class EnvironmentSettings(BaseSettings):
     API_VERSION: str
     APP_NAME: str
+    APP_DESCRIPTION: str | None
     DATABASE_DIALECT: str
     DATABASE_HOSTNAME: str
     DATABASE_NAME: str

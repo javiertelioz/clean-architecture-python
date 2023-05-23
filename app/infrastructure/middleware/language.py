@@ -1,5 +1,6 @@
-from app.infrastructure.language.i18n import active_translation
 from fastapi import Request
+
+from app.infrastructure.language.i18n import active_translation
 
 
 def add_middleware(app):

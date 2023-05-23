@@ -9,10 +9,10 @@ from app.domain.exceptions.user_not_found_exception import UserNotFoundException
 from app.domain.exceptions.user_already_exists_exception import UserAlreadyExistsException
 from app.application.use_cases.user import CreateUserUseCase, GetUserByIdUseCase, UpdateUserUseCase, DeleteUserUseCase
 
-router = APIRouter(prefix="/api/v1/users", tags=["User"])
+user_router = APIRouter(prefix="/api/v1/users", tags=["User"])
 
 
-@router.post(
+@user_router.post(
     "",
     response_model=UserSchema,
     status_code=status.HTTP_201_CREATED,
@@ -27,7 +27,7 @@ async def create(
         raise get_http_exception(e)
 
 
-@router.get(
+@user_router.get(
     "/{id}",
     response_model=UserSchema,
     status_code=status.HTTP_200_OK,
@@ -42,7 +42,7 @@ async def get_by_id(
         raise get_http_exception(e)
 
 
-@router.put(
+@user_router.put(
     "/{id}",
     response_model=UserSchema,
     status_code=status.HTTP_200_OK,
@@ -60,7 +60,7 @@ async def update(
         raise get_http_exception(err)
 
 
-@router.delete(
+@user_router.delete(
     "/{id}",
     status_code=status.HTTP_204_NO_CONTENT,
 )
